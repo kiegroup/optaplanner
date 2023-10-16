@@ -190,12 +190,6 @@ Map getMultijobPRConfig(JenkinsFolder jobFolder) {
             [
                 id: 'optaplanner',
                 primary: true,
-                env : [
-                    // Sonarcloud analysis only on main branch
-                    // As we have only Community edition
-                    ENABLE_SONARCLOUD: EnvUtils.isDefaultEnvironment(this, jobFolder.getEnvironmentName()) && Utils.isMainBranch(this),
-                    SONARCLOUD_ANALYSIS_MVN_OPTS: '-Dsonar.projectKey=org.optaplanner:optaplanner',
-                ]
             ], [
                 id: 'optaplanner-quickstarts',
                 repository: 'optaplanner-quickstarts',
