@@ -190,6 +190,10 @@ Map getMultijobPRConfig(JenkinsFolder jobFolder) {
             [
                 id: 'optaplanner',
                 primary: true,
+                env : [
+                    // Disable Sonarcloud analysis.
+                    ENABLE_SONARCLOUD: false,
+                ]
             ], [
                 id: 'optaplanner-quickstarts',
                 repository: 'optaplanner-quickstarts',
