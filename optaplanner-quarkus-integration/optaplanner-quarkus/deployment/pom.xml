@@ -45,12 +45,6 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-deployment</artifactId>
       <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.yaml</groupId>
-          <artifactId>snakeyaml</artifactId>
-        </exclusion>      
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>io.rest-assured</groupId>
@@ -86,12 +80,6 @@
     <dependency>
       <groupId>org.kie.kogito</groupId>
       <artifactId>drools-core-dynamic</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.yaml</groupId>
-      <artifactId>snakeyaml</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
