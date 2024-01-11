@@ -5,7 +5,7 @@ updates:
   schedule:
     interval: daily
     time: '03:00'
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 0
   target-branch: "main"
   commit-message:
     prefix: "[bot]"
@@ -23,7 +23,7 @@ updates:
   schedule:
     interval: daily
     time: '04:00'
-  open-pull-requests-limit: 0
+  open-pull-requests-limit: 5
   target-branch: "7.67.x"
   commit-message:
     prefix: "[bot][7.67.x]"
@@ -32,10 +32,19 @@ updates:
   schedule:
     interval: daily
     time: '05:00'
-  open-pull-requests-limit: 0
+  open-pull-requests-limit: 5
   target-branch: "8.13.x"
   commit-message:
     prefix: "[bot][8.13.x]"
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: '01:00'
+  open-pull-requests-limit: 5
+  target-branch: "8.38.x-prod"
+  commit-message:
+    prefix: "[bot][8.38.x-prod]"    
 - package-ecosystem: "github-actions"
   directory: "/"
   schedule:
