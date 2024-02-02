@@ -78,14 +78,6 @@ How to retest this PR or trigger a specific build:
   Run checks against Quarkus main branch  
   Please add comment: <b>Jenkins (re)run [optaplanner|optaplanner-quickstarts] quarkus-branch</b>
 
-- for <b>quarkus lts checks</b>  
-  Run checks against Quarkus lts branch  
-  Please add comment: <b>Jenkins run quarkus-lts</b>
-
-- for a <b>specific quarkus lts check</b>  
-  Run checks against Quarkus lts branch  
-  Please add comment: <b>Jenkins (re)run [optaplanner|optaplanner-quickstarts] quarkus-lts</b>
-
 - for <b>native checks</b>  
   Run native checks  
   Please add comment: <b>Jenkins run native</b>
@@ -93,14 +85,6 @@ How to retest this PR or trigger a specific build:
 - for a <b>specific native check</b>  
   Run native checks 
   Please add comment: <b>Jenkins (re)run [optaplanner|optaplanner-quickstarts] native</b>
-
-- for <b>native lts checks</b>  
-  Run native checks against quarkus lts branch
-  Please add comment: <b>Jenkins run native-lts</b>
-
-- for a <b>specific native lts check</b>  
-  Run native checks against quarkus lts branch
-  Please add comment: <b>Jenkins (re)run [optaplanner|optaplanner-quickstarts] native-lts</b>
 
 </details>
 
