@@ -219,12 +219,12 @@ setupDeployJob(JobType.NIGHTLY)
 setupSpecificBuildChainNightlyJob('native')
 setupSpecificBuildChainNightlyJob('quarkus-main')
 setupSpecificBuildChainNightlyJob('quarkus-branch')
-setupSpecificBuildChainNightlyJob('quarkus-lts')
-setupSpecificBuildChainNightlyJob('native-lts')
+//setupSpecificBuildChainNightlyJob('quarkus-lts')
+//setupSpecificBuildChainNightlyJob('native-lts')
 
 // Release jobs
-setupDeployJob(JobType.RELEASE)
-setupPromoteJob(JobType.RELEASE)
+//setupDeployJob(JobType.RELEASE)
+//setupPromoteJob(JobType.RELEASE)
 
 if (Utils.isMainBranch(this)) {
     setupOptaPlannerTurtleTestsJob('drools')

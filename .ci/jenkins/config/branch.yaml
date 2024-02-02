@@ -1,3 +1,20 @@
+generation_config:
+  missing_environments: ignore
+
+job_types:
+  setup_branch:
+    disabled: true
+  nightly:
+    disabled: false
+  other:
+    disabled: true
+  pullrequest:
+    disabled: false
+  release:
+    disabled: true
+  tools:
+    disabled: true
+
 environments:
   native:
     env_vars:
@@ -17,27 +34,6 @@ environments:
       QUARKUS_BRANCH: '2.16'
     ids:
     - quarkus
-  quarkus-lts:
-    pull_request_default_check: false
-    env_vars:
-      BUILD_MVN_OPTS: -Dproductized
-      QUARKUS_BRANCH: '2.13'
-    ids:
-    - quarkus
-    - lts
-    - prod
-  native-lts:
-    env_vars:
-      NATIVE: true
-      BUILD_MVN_OPTS: -Dproductized
-      BUILD_MVN_OPTS_CURRENT: -Dnative -Dquarkus.native.container-build=true
-      QUARKUS_BRANCH: '2.13'
-      QUARKUS_NATIVE_BUILDER_IMAGE: mandrel
-      ADDITIONAL_TIMEOUT: 720
-    ids:
-    - native
-    - prod
-    - lts
   ecosystem:
     auto_generation: false
     ids:
@@ -100,5 +96,5 @@ jenkins:
   email_creds_id: OPTAPLANNER_CI_EMAIL
   default_tools:
     jdk: kie-jdk17
-    maven: kie-maven-3.8.7
+    maven: kie-maven-3.9.3
     sonar_jdk: kie-jdk17
