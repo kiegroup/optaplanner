@@ -6,15 +6,6 @@ updates:
     interval: daily
     time: '03:00'
   open-pull-requests-limit: 0
-  target-branch: "main"
-  commit-message:
-    prefix: "[bot]"
-- package-ecosystem: maven
-  directory: "/"
-  schedule:
-    interval: daily
-    time: '03:00'
-  open-pull-requests-limit: 0
   target-branch: "7.x"
   commit-message:
     prefix: "[bot][7.x]"
