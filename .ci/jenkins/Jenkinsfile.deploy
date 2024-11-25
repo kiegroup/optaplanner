@@ -269,7 +269,7 @@ pipeline {
 void sendErrorNotification() {
     if (params.SEND_NOTIFICATION) {
         String additionalInfo = "**[${getBuildBranch()}] Optaplanner - Deploy**"
-        mailer.sendMarkdownTestSummaryNotification("CI failures", [env.OPTAPLANNER_CI_EMAIL_TO], additionalInfo)
+        mailer.sendMarkdownTestSummaryNotification("Optaplanner CI failures", [env.OPTAPLANNER_CI_EMAIL_TO], additionalInfo)
     } else {
         echo 'No notification sent per configuration'
     }
