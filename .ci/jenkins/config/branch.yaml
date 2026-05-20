@@ -1,22 +1,22 @@
 environments:
   native:
     env_vars:
-      NATIVE: true
+      NATIVE: false
       BUILD_MVN_OPTS_CURRENT: -Dnative -Dquarkus.native.container-build=true
       ADDITIONAL_TIMEOUT: 720
       BUILD_MVN_OPTS: '-Dproductized  '
     ids:
     - native
-    enabled: true
+    enabled: false
   quarkus-branch:
     env_vars:
       QUARKUS_BRANCH: '2.13'
       BUILD_MVN_OPTS: '-Dproductized  '
     ids:
     - quarkus
-    enabled: true
+    enabled: false
   default:
-    enabled: true
+    enabled: false
     env_vars:
       BUILD_MVN_OPTS: '-Dproductized  '
 productized_branch: true
