@@ -5,11 +5,11 @@ job_types:
   setup_branch:
     disabled: true
   nightly:
-    disabled: false
+    disabled: true
   other:
     disabled: true
   pullrequest:
-    disabled: false
+    disabled: true
   release:
     disabled: true
   tools:
@@ -38,7 +38,7 @@ environments:
     auto_generation: false
     ids:
     - ecosystem
-productized_branch: true
+productized_branch: false
 disable:
   triggers: false
   deploy: true
