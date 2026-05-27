@@ -7,7 +7,7 @@ pipeline {
     tools {
         maven 'kie-maven-3.8.7'
         jdk 'kie-jdk11'
-        nodejs 'nodejs-16.2.0'
+        nodejs 'nodejs-20.14.0'
     }
     parameters {
         string(description: 'The deployment URL', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL')
